@@ -5,7 +5,8 @@ import { lusitana } from "@/app/ui/fonts";
 import { fetchRevenue } from "@/app/lib/data";
 import clsx from "clsx";
 
-export default function Page() {
+export default async function Page() {
+  const revenue = await fetchRevenue();
   return (
     <main>
       <h1 className={clsx(lusitana.className, "mb-4 text-xl md:text-2xl")}>
@@ -18,7 +19,7 @@ export default function Page() {
         {/* <Card title="Total Customers" value={numberOfCustomers} type="customers" /> */}
       </div>
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
-        {/* <RevenueChart revenue={revenue} /> */}
+        <RevenueChart revenue={revenue} />
         {/* <LatestInvoices latestInvoices={latestInvoices} /> */}
       </div>
     </main>
