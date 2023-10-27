@@ -1,5 +1,6 @@
 // This file contains placeholder data that you'll be replacing with real data in the Data Fetching chapter:
 // https://nextjs.org/learn/dashboard-app/fetching-data
+/** @type {import('./definitions').User[]} */
 const users = [
   {
     id: '410544b2-4001-4271-9855-fec4b6a6442a',
@@ -9,6 +10,7 @@ const users = [
   },
 ];
 
+/** @type {import('./definitions').Customer[]} */
 const customers = [
   {
     id: '3958dc9e-712f-4377-85e9-fec4b6a6442a',
@@ -72,6 +74,7 @@ const customers = [
   },
 ];
 
+/** @type {import('./definitions').Invoice[]} */
 const invoices = [
   {
     customer_id: customers[0].id,
@@ -165,6 +168,7 @@ const invoices = [
   },
 ];
 
+/** @type {import('./definitions').Revenue[]} */
 const revenue = [
   { month: 'Jan', revenue: 2000 },
   { month: 'Feb', revenue: 1800 },
