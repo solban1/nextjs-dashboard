@@ -3,6 +3,7 @@ import AcmeLogo from "@/app/ui/acme-logo";
 import Link from "next/link";
 import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
+import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
   return (
@@ -27,6 +28,13 @@ export default function Page() {
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
           >
             <span>Log in</span>
+          </Link>
+          <Link
+            href="/dashboard"
+            className="flex items-center gap-3 text-sm text-blue-500 transition-colors hover:text-blue-400 md:text-base"
+          >
+            <span>Continue as Guest</span>
+            <ArrowRightIcon className="w-4 h-4" />
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
